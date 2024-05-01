@@ -53,19 +53,18 @@ def play(word):
         print(word_completion)
         print("\n")
     if guessed:
+        print("Woo Hoo! You guessed the word!")
         if (tries - 6) * -1 < int(pb):
             pb = (tries - 6) * -1
             f = open("pb.txt", "w")
             f.write(str(pb))
-            f.close
-            print("Woo Hoo! You guessed the word!")
+            f.close        
             print("You got a new personal best! ", pb, " guesses!")
         else:
-            print("Woo Hoo! You guessed the word!")
-            print("Personal best: ", pb, " guesses")
+            print("Personal best: ", pb, " guesses.")
     else:
         print("You ran out of tries. The word was " + word)
-        print("Your personal best is: ", pb)
+        print("Your personal best is: ", pb, " guesses.")
 
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
