@@ -91,6 +91,7 @@ def play(word):
         print("You ran out of tries. The word was " + word)
         print("Your personal best is: ", pb, " guesses.")
 
+# Hangman display states
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
                 """
