@@ -62,3 +62,19 @@ In the application, players attempt to guess a randomly selected word from a lis
 6. **Repeat until game ends**: The application continues accepting guesses from the player until either the word is fully guessed (player wins) or the Hangman is complete (player loses).
 
 7. **End game**: Once the game ends, it displays a message indicating whether the player won or lost and reveals the unguessed word to the player.
+
+## Installation
+
+To run this application, you must have Python 3 installed.
+
+To install this app, download the **src** folder containing the source code of the project.
+
+Run the **run.sh** bash script which will set up a virtual environment and start the application for you automatically.
+
+## Using the App
+
+Upon launching the application, you'll dive straight into a game of Hangman. Here, you'll encounter the Hangman display, the current word with unguessed letters represented by underscores, and your personal best score. You'll then be prompted to guess a letter or the entire word.
+
+If you guess a letter correctly, it will be revealed in the word, and you'll receive a congratulations. If the word remains incomplete, you'll be prompted to guess again. However, if your guess is incorrect, you'll lose an attempt, and the next stage of the Hangman will be displayed. If you input an invalid guess, such as "3", the game will prompt you to try again.
+
+This cycle continues until either you successfully guess the word or you exhaust all your attempts. If you correctly guess the word and surpass your personal best, you'll receive congratulations, and your new personal best will be saved. Once the game concludes, you'll be given the option to play again or exit the application.
