@@ -16,7 +16,6 @@ if python3 -m venv .venv; then
     source .venv/bin/activate
 else
     echo "Error: Virtual enviroment failed to create"
-    return 1
 fi
 
 # run the app
