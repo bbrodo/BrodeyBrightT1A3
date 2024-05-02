@@ -1,6 +1,8 @@
 import random
 # gets the word list
 from words import word_list
+# Imports colored package
+from colored import Fore, Back, Style
 
 # Gets a random word from the word list
 def get_word():
@@ -75,7 +77,7 @@ def play(word):
         print("\n")
     # handles player winning
     if guessed:
-        print("Woo Hoo! You guessed the word!")
+        print(f"{Fore.green}Woo Hoo! You guessed the word!{Style.reset}")
         # handles if the player beats their personal best
         # converts tries to guesses then writes it to the pb file and updates pb variable
         if (tries - 6) * -1 < int(pb):
@@ -83,7 +85,7 @@ def play(word):
             f = open("pb.txt", "w")
             f.write(str(pb))
             f.close        
-            print("You got a new personal best! ", pb, " guesses!")
+            print(f"{Fore.yellow}You got a new personal best! ", pb, f" guesses!{Style.reset}")
         else:
             print("Personal best: ", pb, " guesses.")
     # handles if the player runs out of tries
@@ -94,7 +96,7 @@ def play(word):
 # Hangman display states
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
-                """
+                f"""{Fore.red}
                    --------
                    |      |
                    |      O
@@ -102,7 +104,7 @@ def display_hangman(tries):
                    |      |
                    |     / \\
                    -
-                """,
+                {Style.reset}""",
                 # head, torso, both arms, and one leg
                 """
                    --------
@@ -173,6 +175,7 @@ def main():
     while input("Play Again? (Y/N) ").upper() == "Y":
         word = get_word()
         play(word)
+
 
 # makes sure the application runs
 if __name__ == "__main__":
