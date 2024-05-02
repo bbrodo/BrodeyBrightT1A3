@@ -10,8 +10,15 @@ then
     exit
 fi
 
+# check if the venv already exists
+if python3 -m venv .venv; then
+    echo "Virtual environment created successfully."
+    source .venv/bin/activate
+else
+    echo "Error: Virtual enviroment failed to create"
+    return 1
+fi
+
 # run the app
-python3 -m venv .venv
-source .venv/bin/activate
 pip3 install colored
 python3 main.py
