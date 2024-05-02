@@ -67,7 +67,10 @@ In the application, players attempt to guess a randomly selected word from a lis
 
 To run this application, you must have Python 3 installed.
 
-This app has only been tested on linux but should run on windows.
+##### Dependencies
+
+The application uses the following dependencies which are automatically set up upon launch.
+- colored==2.2.4
 
 To install this app, download the **src** folder containing the source code of the project.
 
