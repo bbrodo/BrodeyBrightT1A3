@@ -85,13 +85,13 @@ def play(word):
             f = open("pb.txt", "w")
             f.write(str(pb))
             f.close        
-            print(f"{Fore.yellow}You got a new personal best! ", pb, f" guesses!{Style.reset}")
+            print(f"{Fore.yellow}You got a new personal best! Only ", pb, f" incorrect guesses!{Style.reset}")
         else:
-            print("Personal best: ", pb, " guesses.")
+            print("Personal best: ", pb, " incorrect guesses.")
     # handles if the player runs out of tries
     else:
         print("You ran out of tries. The word was " + word)
-        print("Your personal best is: ", pb, " guesses.")
+        print("Your personal best is: ", pb, " incorrect guesses.")
 
 # Hangman display states
 def display_hangman(tries):
