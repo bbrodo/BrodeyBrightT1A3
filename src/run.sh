@@ -10,13 +10,8 @@ then
     exit
 fi
 
-# check if the venv already exists
-if [ ! -d ".venv" ]
-then
-    echo "[INFO] Creating new virtual environment"
-    python3 -m venv .venv
-fi
-
 # run the app
+python3 -m venv .venv
 source .venv/bin/activate
+pip3 install colored
 python3 main.py
