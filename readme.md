@@ -67,6 +67,8 @@ In the application, players attempt to guess a randomly selected word from a lis
 
 To run this application, you must have Python 3 installed.
 
+This app has only been tested on linux but should run on windows.
+
 To install this app, download the **src** folder containing the source code of the project.
 
 Run the **run.sh** bash script which will set up a virtual environment and start the application for you automatically.
@@ -78,3 +80,15 @@ Upon launching the application, you'll dive straight into a game of Hangman. Her
 If you guess a letter correctly, it will be revealed in the word, and you'll receive a congratulations. If the word remains incomplete, you'll be prompted to guess again. However, if your guess is incorrect, you'll lose an attempt, and the next stage of the Hangman will be displayed. If you input an invalid guess, such as "3", the game will prompt you to try again.
 
 This cycle continues until either you successfully guess the word or you exhaust all your attempts. If you correctly guess the word and surpass your personal best, you'll receive congratulations, and your new personal best will be saved. Once the game concludes, you'll be given the option to play again or exit the application.
+
+## Implementation Plan
+
+I used a Trello board to manage and plan my project and tasks.
+
+#### Screenshots
+
+![Trello Board](/docs/trello1.png)
+![Trello task1](/docs/trello2.png)
+![Trello task2](/docs/trello3.png)
+![Trello task3](/docs/trello4.png)
+![Trello task4](/docs/trello5.png)
