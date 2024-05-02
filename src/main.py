@@ -2,7 +2,7 @@ import random
 # gets the word list
 from words import word_list
 # Imports colored package
-from colored import Fore, Back, Style
+from colored import Fore, Style
 
 # Gets a random word from the word list
 def get_word():
