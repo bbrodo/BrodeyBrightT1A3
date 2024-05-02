@@ -80,9 +80,16 @@ Run the **run.sh** bash script which will set up a virtual environment and sta
 
 Upon launching the application, you'll dive straight into a game of Hangman. Here, you'll encounter the Hangman display, the current word with unguessed letters represented by underscores, and your personal best score. You'll then be prompted to guess a letter or the entire word.
 
+![Hangmanstart](/docs/hangman1.png)
+
 If you guess a letter correctly, it will be revealed in the word, and you'll receive a congratulations. If the word remains incomplete, you'll be prompted to guess again. However, if your guess is incorrect, you'll lose an attempt, and the next stage of the Hangman will be displayed. If you input an invalid guess, such as "3", the game will prompt you to try again.
 
+![Hangmanguess](/docs/hangman2.png)
+
 This cycle continues until either you successfully guess the word or you exhaust all your attempts. If you correctly guess the word and surpass your personal best, you'll receive congratulations, and your new personal best will be saved. Once the game concludes, you'll be given the option to play again or exit the application.
+
+![Hangmandie](/docs/hangman3.png)
+![Hangmanwin](/docs/hangman4.png)
 
 ## Implementation Plan
 
